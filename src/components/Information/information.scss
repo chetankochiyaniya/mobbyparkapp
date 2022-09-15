@@ -1,0 +1,111 @@
+// .dashboard-container {
+//     margin-top: 80px;
+//     margin-left: 150px;
+//     .operator {
+//         padding: 1%;
+//         h2 {
+//             font-weight: 300;
+//             margin-top: 0;
+//             padding-top: 0;
+//             margin-bottom: 0;
+//             padding-bottom: 0;
+//         }
+//     }
+//     .capacity {
+//         border: 1px solid black;
+//         text-align: center;
+//         margin-top: 7vh;
+//         margin-left: 20rem;
+//         border-radius: 7px;
+//         box-sizing: border-box;
+//         background: #ffffff;
+//         box-shadow: 7px 7px 14px #e0e0e0, -7px -7px 14px #ffffff;
+//         h2,
+//         h4 {
+//             font-weight: 400;
+//         }
+//         .car,
+//         .bike,
+//         .total {
+//             width: 115px;
+//             height: 115px;
+//             align-items: center;
+//             padding-top: 10px;
+//             margin: 50px;
+//         }
+//     }
+//     .capacity-graph {
+//         width: 50vh;
+//     }
+//     // @media only screen and (min-width:1080px) {
+//     //     .capacity {
+//     //         margin-left: 25vw;
+//     //     }
+//     // }
+//     .capacity:hover {
+//         cursor: pointer;
+//         border-radius: 7px;
+//         background: #ffffff;
+//         box-shadow: 14px 14px 28px #e0e0e0, -14px -14px 28px #ffffff;
+//     }
+// }
+
+// .box {
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// .pricing {
+//     margin-top: 5vh;
+//     text-align: center;
+//     width: 60vw;
+//     margin-left: 20vw;
+//     h2 {
+//         font-weight: 300;
+//         margin-bottom: 5vh;
+//     }
+//     .weekend {
+//         h3 {
+//             font-weight: 300;
+//             margin-bottom: 4vh;
+//         }
+//     }
+// }
+
+// @media only screen and (max-width:500px) {
+//     .dashboard-container {
+//         width: 70vw;
+//         .operator {
+//             h2 {
+//                 font-size: 1em;
+//             }
+//         }
+//     }
+//     .capacity {
+//         margin-left: 5vw;
+//         h2,
+//         h4 {
+//             font-size: 1em;
+//         }
+//     }
+//     .pricing {
+//         h2 {
+//             font-size: 2em;
+//             margin-bottom: 3vh;
+//         }
+//         .weekend {
+//             h3 {
+//                 font-size: 1.5em;
+//                 margin-bottom: 2vh;
+//             }
+//         }
+//     }
+// }
+
+.react-bootstrap-table table {
+    table-layout: auto;
+  }
+
+.tabletest{
+    width: 100%;
+}

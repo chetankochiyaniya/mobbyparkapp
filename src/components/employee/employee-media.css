@@ -1,0 +1,14 @@
+@media screen and (max-width:500px) {
+    .react-responsive-modal-modalCenter{
+        left: 20px !important;
+    width:340px !important;
+     transform: scale(0.9) !important;
+     -webkit-transform: scale(0.9) !important;
+     -moz-transform: scale(0.9) !important;
+     -ms-transform: scale(0.9) !important;
+     -o-transform: scale(0.9) !important;
+    }
+    .react-responsive-modal-modalCenter > h1{
+        margin-left: 1em;
+    }
+}
