@@ -1,0 +1,169 @@
+@import '../../utilities/theme.scss';
+//general
+.logo-img{
+    
+    width:25vw;
+    height:5vw;
+    padding-left: 10%;
+    padding-top: 0;
+}
+.join-head{
+    font-weight: 300;
+    font-size: 2.6em;
+    margin-left: 1.5vw;
+    padding-top: 8vh;
+    padding-bottom: 0;
+    margin-bottom: 1.4vh;
+}
+.join-head-sub{
+    font-weight: 400;
+    margin-left: 1.5vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+.signup-svg{
+    width: 70%;
+}
+
+.login-svg{
+    width: 65%;
+    margin-left: 7.5%;
+    padding-bottom: 17vh;
+}
+.signup-form{
+    height: 65vh;
+    margin-top: 7vh;
+    width: 35vw;
+    margin-left: 7.5vw;
+}
+.signup-button{
+    margin-left: 1.5vw;
+    margin-top: 4%;
+    padding: 1%;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s padding ease-in;
+}
+.signup-button:hover, .signup-button:active{
+    cursor: pointer;
+    padding: 1.1%;
+}
+.checkbox-div{
+    margin-left: 1.5vw;
+    font-size: 0.9em;
+    line-height: 22px;
+}
+.form-control-div{
+    margin-left: 1.5vw;
+    margin-bottom: 2.5vh;
+    label{
+        display: block;
+    }
+    input{
+        display: block;
+        border: none;
+
+        width: 60%;
+        border-radius: 5px;
+        font-size: 1em;
+        padding: 1.3%;
+    }
+ 
+}
+
+//bright
+.signup-container{
+    height: 91vh;
+    margin-top: 5vh;
+    overflow: hidden;
+        
+    .signup-right{
+        height: 90vh;
+        display: block;
+        
+    }
+
+    .signup-form{
+        border-radius: 12px;
+        background: #FAFAFA;
+        box-shadow:  5px 5px 10px #9b9b9b, 
+                    -5px -5px 10px #ffffff;
+    }
+    .form-control-div{
+        input{
+            background-color: $navy;
+            color: $white;
+        }
+        input:focus {
+            outline: none !important;
+            border: 2.5px solid white;
+            box-shadow: 0 0 10px $blue;
+        }   
+    }
+    .signup-button{
+        background-color: $blue;
+        color: white;
+        font-weight: 300;
+    }
+    .signup-button:active, .signup-button:hover{
+        background-color: $navy;
+        color: white;
+    }
+    .login-link{
+        text-decoration: none;
+        color: $blue;
+        padding-left: 2%;
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+}
+
+
+@media only screen and (min-width:500px) and  (max-width:960px){
+    .signup-right{
+        display: none;
+    }
+    .signup-form{
+        width: 70vw;
+        margin-top: 10vh;
+        margin-left: 15vw;
+    }
+
+    .logo-img{
+    
+        width:30vw;
+        height:7.5vw;
+        padding-left: 10%;
+        padding-top: 0;
+    }
+}
+@media only screen and (max-width:500px){
+
+    .logo-img{
+    
+        width:37vw;
+        height:10vw;
+        padding-left: 10%;
+        padding-top: 0;
+    }
+    .signup-right{
+        display: none;
+    }
+    .signup-form{
+        width: 80vw;
+        margin-top: 10vw;
+        margin-left: 5vw;
+        padding-left:5vw;
+        margin-right:0vw;
+        padding-right:3vw;
+    }
+    .join-head{
+        font-size: 2em;
+    }
+    .signup-form{
+        height: 60vh;
+        margin-top: 0;
+    }
+    
+}
