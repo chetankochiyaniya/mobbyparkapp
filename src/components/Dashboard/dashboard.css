@@ -1,10 +1,7 @@
 body{
     overflow-x: hidden;
 }
-#root {
-    width: fit-content;
-    height: fit-content;
-}
+
 .chart-bg{
     background: #fff;
     box-shadow: 0px 8px 24px rgba(255, 255, 255, 0.15), 0px 8px 24px rgba(0, 0, 0, 0.15);
@@ -15,7 +12,6 @@ body{
 
 .chart_wrap{
     position: relative;
-    right: 10%;
     bottom: 10%;
 }
 .chart-grid-container{
@@ -61,6 +57,7 @@ body{
 .chart_3_wrapper{
     position: relative;
     bottom: 30%;
+    background: #fff;
     border-radius: 35px;
     box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25), 10px 15px 24px rgba(0, 0, 0, 0.15);
     -webkit-border-radius: 35px;
@@ -79,17 +76,17 @@ body{
 
 .users_wrap{
     border-radius: 35px;
+    background: #fff;
     padding:1em ;
     position: absolute;
-    height: 300px;
+    height: 341px;
     box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25), 10px 15px 24px rgba(0, 0, 0, 0.15);
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
-    right: 25%;
+    right: 20.5%;
     width:auto;
-    top:70%;
 }
 .user{
     background: rgba(0, 0, 0, 0.9);
@@ -97,14 +94,14 @@ box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.15);
 border-radius: 20px;
 height: 50px;
 width: 200px;
-margin-top: 10px;
+margin-top: 20px;
 }
 
 .weakly-rates{
     position: absolute;
-    width: 635px;
+    width: 900px;
     height: 94px;
-    left: 200px;
+    left: 178px;
     top: 685px;
     background: #FFFFFF;
     box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.15);
@@ -128,6 +125,13 @@ margin-top: 10px;
     -o-border-radius: 20px;
 }
 
+.mgt{
+    margin-top: 7.5em;
+}
+.rmgt{
+    margin-left: 10px;
+    margin-top: -99px;
+}
 @media screen and (max-width:1200px){
     body {
         overflow-y: scroll;

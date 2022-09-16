@@ -46,7 +46,7 @@ function Dashboard() {
             <div className="container">
                 <div className="row">
                     <div className="d-flex">
-                        <div className="item chart-bg" style={{ marginTop: '1em' }}>
+                        <div className="item chart-bg" style={{ marginLeft: '2em', marginTop: '1em' }}>
                             <br /><center><h6>CAR</h6></center>
                             <div className="chart_wrap">
                                 <Chart
@@ -66,7 +66,7 @@ function Dashboard() {
                                     }}
                                 />
                             </div>
-                            <div className="chart-grid-container justify-content-center">
+                            <div className="chart-grid-container">
                                 <div className="item-a">Total</div>
                                 <div className="item-a">Used</div>
                                 <div className="item-a">{vehicleInfo.carCapacity}</div>
@@ -93,7 +93,7 @@ function Dashboard() {
                                     }}
                                 />
                             </div>
-                            <div className="chart-grid-container justify-content-center">
+                            <div className="chart-grid-container">
                                 <div className="item-a">Total</div>
                                 <div className="item-a">Used</div>
                                 <div className="item-a">{vehicleInfo.bikeCapacity}</div>
@@ -101,7 +101,7 @@ function Dashboard() {
                             </div>
                         </div>
                         <div className="item chart-bg" style={{ marginLeft: '2em', marginTop: '1em' }}>
-                            <br /><center><h6>Auto</h6></center>
+                            <br /><center><h6>CAR</h6></center>
                             <div className="chart_wrap">
                                 <Chart
                                     width={'200px'}
@@ -120,7 +120,7 @@ function Dashboard() {
                                     }}
                                 />
                             </div>
-                            <div className="chart-grid-container justify-content-center">
+                            <div className="chart-grid-container">
                                 <div className="item-a">Total</div>
                                 <div className="item-a">Used</div>
                                 <div className="item-a">{vehicleInfo.carCapacity}</div>
@@ -147,14 +147,14 @@ function Dashboard() {
                                     }}
                                 />
                             </div>
-                            <div className="chart-grid-container justify-content-center">
+                            <div className="chart-grid-container">
                                 <div className="item-a">Digital</div>
                                 <div className="item-a">Cash</div>
                                 <div className="item-a">{operatorEarnings.digitalPay}</div>
                                 <div className="item-a">{operatorEarnings.cashPay}</div>
                             </div>
                         </div>
-                        <div className="card chart_2" style={{ marginLeft: '3em', marginTop: '1em', borderRadius: '26px' }}>
+                        <div className="col-md-3 card chart_2" style={{ marginLeft: '2em', marginTop: '1em', borderRadius: '26px' }}>
                             <br /><center><h6>MONTHLY EARNINGS</h6></center>
                             <div className="chart_wrapper">
                                 <Chart
@@ -188,15 +188,9 @@ function Dashboard() {
                     </div>
                 </div>
             </div>
-            
-            <div className="container chart_3 mgt">
-            <div className="row">
-                    <div className="d-flex">
-                <div className="col-10 item chart_3_wrapper ml-3 pr-5"> <br />
+            <div className="container chart_3">
+                <div className="col-md-8 item chart_3_wrapper"> <br />
                     <center><h6 style={{ color: '#000' }}>Earnings</h6></center>
-                    <div className="row">
-                <center><h6 style={{ marginLeft: '4em', position: 'absolute' }}> Today's Earnings: {operatorEarnings.earnings}</h6></center>
-            </div>
                     <Chart
                         width={'700px'}
                         height={'300px'}
@@ -225,9 +219,11 @@ function Dashboard() {
                     />
                 </div>
             </div>
-            
+            <div className="row">
+                <center><h6 style={{ marginLeft: '4em', marginTop: '5px', position: 'absolute', left: '10em' }}> Today's Earnings: {operatorEarnings.earnings}</h6></center>
+            </div>
 
-            <div className="row users_wrap rmgt">
+            <div className="row users_wrap">
                 <center><h6>Booking [ 7 days ]</h6>
                     <div className="user" style={{ color: 'white' }}> <h6><br />Employee Name&nbsp;<span style={{ color: '#666666' }}>90</span></h6></div>
                     <div className="user" style={{ color: 'white' }}> <h6><br />Employee Name&nbsp;<span style={{ color: '#666666' }}>90</span></h6></div>
@@ -236,14 +232,11 @@ function Dashboard() {
 
                 </center>
             </div>
-            </div>
-            </div>
-
 
             <div className="row weakly-rates">
-                <center><h6 style={{ marginLeft: '6em', marginTop: '7px', position: 'absolute', left: '18em' }}> Today's Slot Earnings</h6></center>
-                <h6 style={{ marginLeft: '8em', marginTop: '35px', position: 'absolute', }}> 10AM - 10PM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Digital: {operatorEarningsSlot.digitalPay_10am_10pm} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cash: {operatorEarningsSlot.cashPay_10am_10pm}</h6>
-                <h6 style={{ marginLeft: '8em', marginTop: '65px', position: 'absolute', }}> 10PM - 10AM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Digital: {operatorEarningsSlot.digitalPay_10pm_10am} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cash: {operatorEarningsSlot.cashPay_10pm_10am}</h6>
+                <center><h6 style={{ marginLeft: '4em', marginTop: '7px', position: 'absolute', left: '10em' }}> Today's Slot Earnings</h6></center>
+                <h6 style={{ marginLeft: '2em', marginTop: '35px', position: 'absolute', }}> 10AM - 10PM: Digital: {operatorEarningsSlot.digitalPay_10am_10pm} &nbsp; Cash: {operatorEarningsSlot.cashPay_10am_10pm}</h6>
+                <h6 style={{ marginLeft: '2em', marginTop: '65px', position: 'absolute', }}> 10PM - 10AM: Digital: {operatorEarningsSlot.digitalPay_10pm_10am} &nbsp; Cash: {operatorEarningsSlot.cashPay_10pm_10am}</h6>
             </div>
         </>
     );
